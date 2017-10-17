@@ -6,7 +6,7 @@ html body { margin: 0; }
 html body header { background: #ffda44; height: 2.5rem; text-align: center; }
 html body header .ye-head { color: #fff; height: 2.5rem; font-size: 1rem; line-height: 2.5rem; }
 html body section { width: 100%; }
-html body section .ye-section { margin: 0 1rem; text-align: center; margin-top: 0.7rem; margin-bottom: 1.5rem; }
+html body section .ye-section { margin: 0 1rem; text-align: center; margin-top: 0.7rem; }
 html body section .ye-section span { position: relative; }
 html body section .ye-section span img { width: 5rem; height: 5.5rem; }
 html body section .ye-section span i { position: absolute; right: 0.3rem; bottom: 0.2rem; }
