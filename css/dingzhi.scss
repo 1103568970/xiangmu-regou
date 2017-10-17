@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+///////////
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  color: red;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+///////////////
+$sc:50;
+html{
+    height: 100%;
+    width: 100%;
+    body{
+        @extend html;
+        margin: 0;
+        header{
+            background: rgb(255,218,68);
+            height: 125/$sc+rem;
+            text-align: center;
+            .ye-head{
+                 color: #fff;
+                 height: 125/$sc+rem;
+                 font-size: 50/$sc+rem;
+                 line-height: 125/$sc+rem;
+            }
+        }
+        section{
+            width: 100%;
+           
+            .ye-section{
+                margin: 0  50/$sc+rem ;
+                text-align: center;
+                margin-top: 35/$sc+rem;
+                margin-bottom: 75/$sc+rem;
+               
+                
+                
+                span{
+                   position: relative;
+                  
+                    img{
+                        width: 250/$sc+rem;
+                        height:275/$sc+rem;                       
+                    }
+                    i{
+                        position: absolute;
+                        right: 15/$sc+rem;
+                        bottom: 10/$sc+rem;
+                    }
+                    .dui{
+                         right: 0 !important;
+                    }
+                 
+                    &:nth-child(1){
+                        margin-right: 15/$sc+rem;
+                    }
+                     &:nth-child(2){
+                        margin-left: 15/$sc+rem;
+                    }
+                }
+                
+            }
+        }
+        footer{
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background: rgb(237,81,82);
+                height: 125/$sc+rem;
+                text-align: center;
+                color: #fff;
+            .ye-footer{
+            
+                height: 2.5rem;
+                font-size: 1rem;
+                 line-height: 2.5rem;
+            }
+        }
+    }
+}
+
+
+
+.ye-section-text{
+        color: #FFFFFF;
+        position: absolute !important;
+        left: 50/$sc+rem;
+        top: -200/$sc+rem !important;
+        font-size: 22/$sc+rem;
+}
