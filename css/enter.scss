@@ -1,3 +1,95 @@
+
+
+$sc:50;
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        @extend html;
+        margin: 0;
+        header{
+            background: rgb(255,218,68);
+            height: 125/$sc+rem;
+            text-align: center;
+            .ye-enter-head{
+                position: reletuve;
+                 color: #fff;
+                 height: 125/$sc+rem;
+                 font-size: 50/$sc+rem;
+                 line-height: 125/$sc+rem;
+                 
+                .ye-enter-head-span{
+                        position: absolute;
+                        left: 10/$sc+rem;
+                }
+            }
+        }
+        section{
+            .ye-section-enter{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px;
+                    border-bottom: 1px solid #ccc;
+                    padding-bottom: 10px;
+                    div{
+                        font-size: 18px;
+                        color:  rgb(51,51,51);
+                    }
+                    span{
+                        font-size: 18px;
+                        color: rgb(51,51,51);
+                    }
+                  
+            }
+        }
+        footer{
+            height: 100/$sc+rem;
+            .ye-footer-btn{
+                text-align: center;
+                 height: 100/$sc+rem;
+                 input{
+                     
+                      height: 100/$sc+rem;
+                      background: #fff;
+                      border: none;
+                      font-size: 40/$sc+rem;
+                      color:  rgb(51,51,51);
+                 }
+            }
+        }
+    }
+}
+
+
+.ye-section-enter-padding{
+    padding-right: 20/$sc+rem;
+}
+.ye-section-enter-padding-right{
+
+    position: absolute;
+    right: 75/$sc+rem;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font2/iconfont.eot');
+  src: url('../font2/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font2/iconfont.woff') format('woff'),
+  url('../font2/iconfont.ttf') format('truetype'),
+  url('../font2/iconfont.svg#iconfont') format('svg');
+}
+
+
+
+
+
+
+
+
 @font-face {
   font-family: 'iconfont';
   src: url('../font/iconfont.eot');
@@ -14,27 +106,4 @@
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
-}
-
-
-$sc:50;
-html{
-    width: 100%;
-    height: 100%;
-    body{
-        @extend html;
-        margin: 0;
-        header{
-            background: rgb(255,218,68);
-            height: 125/$sc+rem;
-            text-align: center;
-            .ye-enter-head{
-                 color: #fff;
-                 height: 125/$sc+rem;
-                 font-size: 50/$sc+rem;
-                 line-height: 125/$sc+rem;
-                
-            }
-        }
-    }
 }

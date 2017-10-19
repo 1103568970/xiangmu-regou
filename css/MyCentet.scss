@@ -1,0 +1,166 @@
+$sc:50;
+
+html{
+    height: 100%;
+    width: 100%;
+    body{
+        @extend html;
+        margin: 0;
+        header{
+            height: 220/$sc+rem;
+            background: rgb(108,108,108);
+            .Mycentet-header{
+               position: relative;
+                
+                .Mycentet-header-img{
+                      @extend html;
+                    img{
+                        margin-left: 60/$sc+rem;
+                        margin-top: 35/$sc+rem;
+                        border-radius: 50%;
+                        width: 150/$sc+rem;    
+                        height: 150/$sc+rem;    
+                        
+                    }
+                    
+                }
+                .Mycentet-header-txt{
+                    color: #fff;
+                        position: absolute;
+                        left: 300/$sc+rem;
+                        top: 50/$sc+rem;
+                    
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    section{
+         @extend html;
+        .Mycentet-section{
+            background: rgb(83,83,83);
+             @extend html;
+             color: #fff;
+             .Mycentet-section-log{
+                 display: flex;
+                 justify-content: space-around;
+                 >div>p{
+                     margin: 0;
+                 }
+             }
+             .Mycentet-section-txt{
+                     display: flex;
+                     justify-content: space-between;
+                     font-size: 35/$sc+rem;
+                     margin-top: 3/$sc+rem;
+                     margin-top: 20px;
+                     border-bottom: 1px solid #fff;
+                     height: 40px;
+                     margin-left: 25px;
+                     margin-right: 25px;
+                     .Mycentet-section-txt-position{
+                             position: relative;
+                             .Mycentet-section-txt-position-span{
+                                 margin-right: 60/$sc+rem;
+                                 font-size: 12/$sc+rem;
+                             }
+                             
+                     }
+             }
+           
+            
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.Mycentet-header-txt-dispaly{
+    
+    display: flex;
+    >div{
+            padding-right: 10/$sc+rem;
+            border-right: 1px solid rgb(120,120,120);
+    &:nth-child(n+2){
+        margin-left: 20/$sc+rem;
+    }
+}
+    }
+   
+
+.Mycentet-section-txt-i{
+    width: 50/$sc+rem;
+    height: 25/$sc+rem;
+    border: 1px solid #fff;
+    position: absolute;   
+    top: 14/$sc+rem;
+    right: 0;
+    border-radius: 22/$sc+rem;
+    
+}
+.Mycentet-section-txt-i::after{
+    content: "";
+    display: block;
+    width: 20/$sc+rem;
+    height: 20/$sc+rem;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 2/$sc+rem;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font2/iconfont.eot');
+  src: url('../font2/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font2/iconfont.woff') format('woff'),
+  url('../font2/iconfont.ttf') format('truetype'),
+  url('../font2/iconfont.svg#iconfont') format('svg');
+}
+
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font1/iconfont.eot');
+  src: url('../font1/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font1/iconfont.woff') format('woff'),
+  url('../font1/iconfont.ttf') format('truetype'),
+  url('../font1/iconfont.svg#iconfont') format('svg');
+}
+///////////
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:24px;font-style:normal;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
